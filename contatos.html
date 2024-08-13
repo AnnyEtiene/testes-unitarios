@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato - MilkyMoo</title>
+<link rel="stylesheet" href="css/pag1.css">
+
+<style>
+    body {
+        font-family: 'Sofia', sans-serif;
+        background-color: #872e9f;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ae4479;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+        text-align: center;
+    }
+    .info {
+        margin-bottom: 20px;
+    }
+    .info p {
+        margin: 10px 0;
+    }
+    .formulario {
+        background-color: #7E57C2;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type=text], input[type=email], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+    input[type=submit] {
+        background-color: #512DA8;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type=submit]:hover {
+        background-color: #311B92;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+  <header>
+    <header>
+        <img src="https://milkymoo.com.br/wp-content/uploads/2021/12/vaquinha@contact.png" alt="Logo MilkyMoo"
+          style="width:200px;height:200px;" />
+        <img src="https://milkymoo.com.br/wp-content/uploads/2021/12/melhor.png"
+          alt="Frase: O melhor milk shake do mundo!" style="width: 800px;height:200px;" />
+      </header>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" >Início</a></li>
+          <li><a href="sabores.html" >Sabores</a></li>
+          <li><a href="pag2.html" rel="prev">Galeria</a></li>
+          <li><a href="contatos.html" >Contato</a></li>
+          <li><a href="alcolico.html" >Alcólicos</a></li>
+          
+    <link rel="prev" href="pag2.html">
+    <link rel="next" href="pag3.html">
+        </ul>
+      </nav>
+      
+
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        <div class="info">
+            <p>Telefone: (31) 4002-8922</p>
+            <p>Endereço: Rua dos Milk Shakes, 123 - Cidade dos Sabores</p>
+            <p>Email: contato@milkshakestore.com</p>
+        </div>
+        
+        <div class="formulario">
+            <form id="formulario" action="#" method="POST" onsubmit="return validarFormulario()">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required>
+                <small>Digite apenas números (10 ou 11 dígitos).</small>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validarFormulario() {
+            var telefone = document.getElementById('telefone').value;
+            if (telefone.length < 10 || telefone.length > 11 || isNaN(telefone)) {
+                alert('Por favor, insira um número de telefone válido.');
+                return false;
+            }
+            mostrarMensagemEnviado();
+            return false; // Evita o envio real do formulário para este exemplo
+        }
+
+        function mostrarMensagemEnviado() {
+            alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+            document.getElementById('formulario').reset();
+        }
+    </script>
+</body>
+</html>
+

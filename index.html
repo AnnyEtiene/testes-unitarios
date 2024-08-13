@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MilkyMoo</title>
+  <link rel="stylesheet" href="css/pag1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+</head>
+
+<body class="mybody">
+  <header>
+    <img src="https://milkymoo.com.br/wp-content/uploads/2021/12/vaquinha@contact.png" alt="Logo MilkyMoo"
+      style="width:200px;height:200px;" />
+    <img src="https://milkymoo.com.br/wp-content/uploads/2021/12/melhor.png"
+      alt="Frase: O melhor milk shake do mundo!" style="width: 800px;height:200px;" />
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html" >Início</a></li>
+      <li><a href="sabores.html" rel="next">Sabores</a></li>
+      <li><a href="pag2.html" >Galeria</a></li>
+      <li><a href="contatos.html" >Contato</a></li>
+      <li><a href="alcolico.html" >Alcólicos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <video controls poster="imagens/milkshakes.tumb.jpg">
+      <source src="midia/Americana - Milky Moo.mp4" type="video/mp4" />
+      <p>Ops! A página não foi recarregada, tente novamente</p>
+    </video>
+
+    <audio controls>
+      <source src="midia/Cupid - Oshi no ko [AMV_EDIT]  _Alight motion_.mp3" type="audio/mpeg" />
+    </audio>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni qui placeat expedita facere. Facilis ratione
+      sit id accusantium iste reprehenderit! Ducimus voluptates consectetur error iusto, libero dolore quo natus?
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_5RTFVEOor0?si=TAU6odIIwplez44Z"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+
+    <h2 style="color: #461c35;">
+      Experimente a deliciosa explosão de sabores dos nossos milk shakes na Milky Moo! Feitos com ingredientes frescos e
+      cremosos, cada gole é uma viagem irresistível ao paraíso dos sabores. Desde os clássicos indulgentes até combinações
+      únicas que desafiam o paladar, nossos milk shakes são a escolha perfeita para qualquer ocasião. Venha saborear a
+      felicidade em cada copo na Milky Moo
+    </h2>
+
+    <img src="https://milkymoo.com.br/wp-content/webp-express/webp-images/uploads/2021/12/sobre.png.webp"
+      alt="texto: Sobre" style="width:200px; height:50px;" />
+
+    <h3 style="color: #461c35;">
+      Nossas lojas Milky Moo são verdadeiros refúgios para os amantes de milk shakes. Com um ambiente acolhedor e vibrante,
+      cada loja é projetada para proporcionar uma experiência única e memorável. Desde a decoração moderna até o atendimento
+      caloroso da nossa equipe, queremos que cada visita seja uma pausa revigorante no seu dia. Localizadas estrategicamente
+      para facilitar seu acesso, nossas lojas são o lugar perfeito para relaxar, socializar e desfrutar de um milk shake feito
+      com carinho e qualidade incomparáveis. Venha descobrir o encanto das nossas lojas Milky Moo e deixe-se levar por uma
+      experiência de sabor inigualável.
+    </h3>
+
+    <img src="https://milkymoo.com.br/wp-content/webp-express/webp-images/uploads/2021/12/lojas.png.webp"
+      alt="Texto: nossas lojas" style="width: 450px; height:50px;" />
+
+    <h3 style="color:  #461c35;"> Possuímos diversas franquias!</h3>
+
+    <img src="https://milkymoo.com.br/wp-content/uploads/2022/03/Loja-Bougainville-2.png" alt="Imagem loja"
+      style="width: 500px; height:400px;" />
+
+    <ul>
+      <li><a href="https://milkymoo.com.br/" target="_blank" rel="external">Site oficial</a></li> 
+    </ul>
+
+    <img src="https://milkymoo.com.br/wp-content/webp-express/webp-images/uploads/2023/03/duvidas_sugestoes.png.webp"
+      alt="texto: Dúvidas e sugestões" style="height:150px;" />
+
+    <form id="formulario" action="#" method="POST" onsubmit="return validarFormulario()">
+      <fieldset>
+        <legend>Entre em contato!</legend>
+        <label for="idNome">Digite seu nome</label>
+        <input type="text" id="idNome" name="nome" required>
+        <br />
+        <label for="idNasc">Data de Nascimento</label>
+        <input type="date" id="idNasc" name="nascimento" required>
+        <br />
+        <label for="milkshakes">Selecione seu Milky preferido:</label>
+        <select id="milkshakes" name="milky" required>
+          <option value="Milky Chocolatte">Milky Chocco</option>
+          <option value="Baunilha">Milky Bauny</option>
+          <option value="Limão">Milky Caipirinha</option>
+          <option value="Café">Milky Coffe</option>
+          <option value="Morango">Milky moranguinho</option>
+          <option value="Maracujá">Milky Mara</option>
+        </select>
+        <br /><br />
+        <label>Selecione sua cobertura preferida:</label>
+        <br /><br />
+        <input type="checkbox" id="vehicle1" name="cobertura" value="Chantilly">
+        <label for="vehicle1">Chantilly</label><br>
+        <input type="checkbox" id="vehicle2" name="cobertura" value="Calda de chocolate">
+        <label for="vehicle2">Calda de chocolate</label><br>
+        <input type="checkbox" id="vehicle3" name="cobertura" value="Geleia de morango">
+        <label for="vehicle3">Geleia de morango</label>
+        <br /><br />
+        <legend>Selecione sua região:</legend>
+        <label>
+          <input type="radio" name="opcao" value="opcao1"> Sudeste
+        </label>
+        <label>
+          <input type="radio" name="opcao" value="opcao2"> Sul
+        </label>
+        <label>
+          <input type="radio" name="opcao" value="opcao3"> Centro-oeste
+        </label>
+        <br>
+        <input type="submit" value="Enviar">
+      </fieldset>
+    </form>
+
+    <div id="mensagem-enviado" class="mensagem">
+      <p>Obrigado pelo seu contato! Entraremos em contato em breve.</p>
+    </div>
+
+    <script>
+      function validarFormulario() {
+        var nome = document.getElementById('idNome').value.trim();
+        var nascimento = document.getElementById('idNasc').value;
+        var milky = document.getElementById('milkshakes').value;
+        var coberturas = document.querySelectorAll('input[name="cobertura"]:checked');
+
+        // Validar campo Nome
+        if (nome === '') {
+          alert('Por favor, digite seu nome.');
+          return false;
+        }
+
+        // Validar campo Data de Nascimento
+        if (nascimento === '') {
+          alert('Por favor, selecione sua data de nascimento.');
+          return false;
+        }
+
+        // Validar seleção de Milky preferido
+        if (milky === '') {
+          alert('Por favor, selecione seu Milky preferido.');
+          return false;
+        }
+
+        // Validar seleção de pelo menos uma cobertura
+        if (coberturas.length === 0) {
+          alert('Por favor, selecione pelo menos uma cobertura.');
+          return false;
+        }
+
+        mostrarMensagemEnviado();
+        return false; // Evita o envio real do formulário para este exemplo
+      }
+
+      function mostrarMensagemEnviado() {
+        var mensagemEnviado = document.getElementById('mensagem-enviado');
+        mensagemEnviado.style.display = 'block';
+        setTimeout(function() {
+          mensagemEnviado.style.display = 'none';
+        }, 5000); // Oculta a mensagem após 5 segundos
+      }
+    </script>
+  </main>
+
+  <footer>
+    <p>MilkyMoo<br>
+      <a href="mailto:milkymoo@example.com"> &copy; Milky Moo todos os direitos reservados</a>
+    </p>
+  </footer>
+</body>
+
+</html>

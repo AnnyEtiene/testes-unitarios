@@ -1,0 +1,14 @@
+root {
+    --rosababy: #ffc0cb;
+}
+
+body {
+    background-color: var (rosababy);
+}
+
+
+.mybody {
+    font-family: "Sofia", sans-serif;
+  }
+  
+  

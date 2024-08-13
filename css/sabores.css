@@ -1,0 +1,72 @@
+/* Reset básico para limpar estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sofia', cursive;
+    background-color: #8e44ad; /* Cor roxa */
+    color: #ff80bf; /* Cor rosa para o texto */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.flavor {
+    margin-bottom: 50px;
+}
+
+.flavor img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.flavor h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.flavor p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #8e44ad; /* Cor roxa */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    color: #ff80bf; /* Cor rosa para o texto */
+}
+
+footer p {
+    font-size: 1rem;
+}

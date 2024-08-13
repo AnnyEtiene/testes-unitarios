@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+    --cordevaca: #FFFFFF;
+}
+
+body{ 
+
+  border: #872e9f;
+    background-color: #872e9f; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 1.5em; /* Tamanho da fonte */
+ 
+}
+#imagem{
+    border: #872e9f;
+    background-color: #872e9f; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 1.5em; /* Tamanho da fonte */
+}
+
